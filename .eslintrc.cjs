@@ -1,6 +1,6 @@
 module.exports = {
   "overrides": [{
-    "files": ["./rules/*.js", "index.js"],
+    "files": ["./rules/**/*.js", ".eslintrc.cjs"],
     "env": {
       "node": true,
     },

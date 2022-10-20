@@ -1,4 +1,10 @@
 module.exports = {
+  "overrides": [{
+    "files": ["*.tsx"],
+    rules: {
+      'react/prop-types': 'off'
+    }
+  }],
   plugins: [
     'react',
   ],
@@ -9,7 +15,7 @@ module.exports = {
   },
   "settings": {
     "react": {
-      "version": "detect", // React version. "detect" automatically picks the version you have installed.
+      "version": "detect",
     },
   },
   rules: {
@@ -50,7 +56,7 @@ module.exports = {
       enforceDynamicLinks: 'always'
     }],
     'react/jsx-filename-extension': ['error', {
-      extensions: ['.jsx']
+      extensions: ['.jsx', '.tsx']
     }],
     'react/no-danger-with-children': 'error',
     'react/style-prop-object': 'error',
