@@ -2,7 +2,8 @@ module.exports = {
   "overrides": [{
     "files": ["*.tsx"],
     rules: {
-      'react/prop-types': 'off'
+      'react/prop-types': 'off',
+      "react/require-default-props": "off"
     }
   }],
   plugins: [
